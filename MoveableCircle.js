@@ -3,19 +3,9 @@ import React, { Component } from 'react';
 
 import { Platform,Image,StyleSheet,StatusBar,Text,TouchableHighlight,PanResponder,View } from 'react-native';
 import Util from './utils';
-import Icon from 'react-native-vector-icons/Ionicons';
+//import Icon from 'react-native-vector-icons/Ionicons';
+import Ionicons from '@expo/vector-icons/Ionicons';
 
-/*
-class MyClassComponent extends Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text style={styles.text}>Hello from MyClassComponent!</Text>
-      </View>
-    );
-  }
-}
-*/
 class MoveableCircle extends Component{
   constructor() {
     super();
@@ -93,23 +83,14 @@ class MoveableCircle extends Component{
   render() {
     return(
       <View ref={(circle) => {this.circle = circle;}} style={styles.MoveableCircle} {...this._panResponder.panHandlers}>
-        <Icon  name="baseball" color={this.state.color} size={120}></Icon>
+        <Ionicons name="baseball" color={this.state.color} size={120} />
       </View>
     )
   }
 }
 
 const styles = StyleSheet.create({
-  /*
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  text: {
-    fontSize: 20,
-  },
-  */
+ 
   MoveableCircle:{
     backgroundColor:"transparent",
     position:"absolute",

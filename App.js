@@ -21,12 +21,6 @@ import MoveableCircle from './MoveableCircle';
 
 export default function App() {
   return (
-    /*<View style={styles.container}>
-      
-      <StatusBar style="auto" />
-      <MyClassComponent />
-    </View>
-    */
     <View style={styles.container}>
         <Image source={require('./img/agrass.png')} style={styles.bg}></Image>
         <View style={styles.circleContainer}>
@@ -37,14 +31,6 @@ export default function App() {
 }
 
 const styles = StyleSheet.create({
-  /*
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  */
   container:{
     height:Util.size.height,
     width: Util.size.width
